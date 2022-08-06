@@ -1,8 +1,23 @@
 CC = pandoc
-FLAGS = --pdf-engine=xelatex
+FLAGS = --from=markdown \
+		--to=pdf \
+		--pdf-engine=xelatex \
+		--table-of-contents \
+		--number-sections \
+		--metadata-file=./build/metadata.yaml \
+		--metadata date="`date -u '+%d %B %Y'`" \
+		-V geometry:"top=2cm, bottom=2cm, left=3cm, right=3cm" \
+		--highlight-style=zenburn \
+		-V fontsize=12pt \
+		-V mainfont="Calibri" \
+		-V monofont="Fira Code" \
+		-V colorlinks \
+		-V linkcolor=red \
+#		-V urlcolor=NavyBlue \
+#		-V toccolor=red \w
 
-SOURCE = userguide.md
+SOURCE = ./src/*.md
 OUTPUT = userguide.pdf
 
-build:
-	$(CC) $(SOURCE) $(FLAGS) -o $(OUTPUT)
+all:
+	$(CC) $(SOURCE) $(FLAGS) --output=$(OUTPUT)
