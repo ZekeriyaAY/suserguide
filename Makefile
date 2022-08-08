@@ -3,6 +3,7 @@ FLAGS = --from=markdown \
 		--to=pdf \
 		--pdf-engine=xelatex \
 		--table-of-contents \
+		--toc-depth=5 \
 		--number-sections \
 		--metadata-file=./build/metadata.yaml \
 		--metadata date="`date -u '+%d %B %Y'`" \
