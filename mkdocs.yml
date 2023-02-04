@@ -7,7 +7,6 @@ edit_uri: edit/master/docs/
 
 docs_dir: ./docs
 site_dir: ./build
-img_dir: ./docs/img
 
 nav:
   - Sunucu Kılavuzu:

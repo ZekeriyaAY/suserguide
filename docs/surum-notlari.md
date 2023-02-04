@@ -13,7 +13,7 @@ Kılavuzun güncelliği ve değişikliği için bu sayfayı takip edebilirsiniz.
     ~Zekeriya AY
 
 ## 0.3.0 <small>04 Şubat 2023</small>
-- [Hesap Parolası Değiştirme](04-parola-degistirme.md) sayfası eklendi.
+- [Hesap Parolası Değiştirme](04-hesap-parolasi-degistirme.md) sayfası eklendi.
 - [Giriş](index.md) ve [Sorun Giderme](sorun-giderme.md) sayfalarına contribute bilgilendirmeleri eklendi.
 - ##### Katkıda Bulunanlar: [Zekeriya AY](https://github.com/ZekeriyaAY)
 
