@@ -1,0 +1,50 @@
+site_name: BUÜ BM - Sunucu Kullanım Kılavuzu
+# site_url: http://sunucukullanimkilavuzu.uludag.edu.tr
+
+repo_name: ZekeriyaAY/suserguide
+repo_url: https://github.com/ZekeriyaAY/suserguide
+edit_uri: edit/master/docs/
+
+docs_dir: ./docs
+site_dir: ./build
+img_dir: ./docs/img
+
+nav:
+  - Sunucu Kılavuzu:
+      - index.md
+      - Giriş: index.md
+      - Kampüs Ağına (eduroam) Bağlanma: 01-kampus-agina-baglanma.md
+      - Sunucu Paneline Erişme: 02-sunucu-paneline-erisme.md
+      - Sunucuya (Sanal Makine) Bağlanma: 03-sunucuya-baglanma.md
+      - Hesap Parolası Değiştirme: 04-hesap-parolasi-degistirme.md
+  - Sorun Giderme: sorun-giderme.md
+  - İletişim: iletisim.md
+  - Sürüm Notları: surum-notlari.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+      toc_depth: 4
+
+theme:
+  name: material
+  language: tr
+  locale: tr
+  features:
+    - navigation.expand
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.footer
+    - content.action.edit
+    - content.action.view
+  palette:
+    scheme: slate
+  # favicon: material/server-security
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/server-security
+
